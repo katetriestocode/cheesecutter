@@ -5,13 +5,12 @@ from openai import OpenAI
 import os
 
 load_dotenv()
-client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+client = Groq(api_key=os.environ.get("groq_api_key"))
 
 client = OpenAI(
     api_key=os.environ.get(""),
     base_url="https://api.groq.com/openai/v1",
 )
-
 
 response = client.responses.create(
     input="Explain the importance of fast language models",
