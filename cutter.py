@@ -8,10 +8,10 @@ load_dotenv()
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 client = OpenAI(
-    api_key=os.environ.get("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"),
+    api_key=os.environ.get(""),
     base_url="https://api.groq.com/openai/v1",
 )
-# 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
+
 
 response = client.responses.create(
     input="Explain the importance of fast language models",
