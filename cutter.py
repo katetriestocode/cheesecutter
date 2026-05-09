@@ -1,8 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
-
+from dotenv import load_dotenv
 from openai import OpenAI
 import os
+
+load_dotenv()
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+
 client = OpenAI(
     api_key=os.environ.get("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"),
     base_url="https://api.groq.com/openai/v1",
