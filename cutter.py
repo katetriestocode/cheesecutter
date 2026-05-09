@@ -8,7 +8,7 @@ load_dotenv()
 client = Groq(api_key=os.environ.get("groq_api_key"))
 
 client = OpenAI(
-    api_key=os.environ.get(""),
+    api_key=os.environ.get("groq_api_key"),
     base_url="https://api.groq.com/openai/v1",
 )
 
@@ -17,6 +17,8 @@ response = client.responses.create(
     model="openai/gpt-oss-20b",
 )
 print(response.output_text)
+
+
 
 
 def scrape():
