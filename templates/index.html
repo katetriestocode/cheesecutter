@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>cheesecutter</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>cheesecutter</h1>
@@ -11,4 +11,11 @@
       <input type="text" id="link" placeholder="paste link here">
       <button onclick="submit()">time go</button>
     </div>
+
+    <div id="result-container" style="margin-top: 20px;">
+        <h3>summary:</h3>
+        <p id="summarytext">beep boop...</p>
+    </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
+</html>
