@@ -6,7 +6,15 @@
 </head>
 <body>
     <h1>cheesecutter</h1>
-    <h2>Put a link, get a transcript and an AI summary!</h2>
+
+    <h2>Put a link, get an AI</h2>
+    <select name="queries" id="queries">
+      <option value="Summarize">Summarize</option>
+      <option value="Explain">Explain</option>
+      <option value="Rephrase">Rephrase</option>
+      <option value="Simplification">Simplification</option>
+    </select>
+    
     <div class="input">
       <input type="text" id="link" placeholder="paste link here">
       <button onclick="submit()">time go</button>
@@ -16,6 +24,6 @@
         <h3>summary:</h3>
         <p id="summarytext">beep boop...</p>
     </div>
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
 </body>
 </html>

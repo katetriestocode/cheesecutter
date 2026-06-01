@@ -1,9 +1,11 @@
 function submit() {
     const linkvalue = document.getElementById('link').value;
     const summarytext = document.getElementById('summarytext');
+    
+    const chosenAction = document.getElementById('queries').value;
 
     if (!linkvalue) {
-        alert('paint a link first :P');
+        alert('paste a link first :P');
         return;
     }
 
