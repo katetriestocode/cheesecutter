@@ -1,8 +1,6 @@
 function submit() {
     const linkvalue = document.getElementById('link').value;
     const summarytext = document.getElementById('summarytext');
-    
-    const chosenAction = document.getElementById('queries').value;
 
     if (!linkvalue) {
         alert('paste a link first :P');
@@ -18,6 +16,7 @@ function submit() {
         },
         body: JSON.stringify({link: linkvalue}),
     })
+    
     .then(response => response.json())
     .then(data => {
         if (data.summary) {

@@ -37,8 +37,6 @@ def process():
     data = request.get_json()
     user_link = data.get('link')
 
-    user_action = data.get('action')
-
     scraped_content = scrape(user_link)
     
     max_characters = 20000 
@@ -56,7 +54,7 @@ def process():
                 },
                 {
                     "role": "user",
-                    "content": f"{user_action} this content: {scraped_content}"
+                    "content": f"Summarize this content: {scraped_content}"
                 }
             ],
             temperature=1,
