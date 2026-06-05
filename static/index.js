@@ -21,6 +21,7 @@ function submit() {
     .then(data => {
         if (data.summary) {
             summarytext.innerText = data.summary;
+            
         } else {
             summarytext.innerText = "oopsy daisy";
         }

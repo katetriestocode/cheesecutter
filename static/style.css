@@ -1,0 +1,11 @@
+.cutter-icon {
+    max-width: 20vw;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.cutter-icon img{
+    width: 100%;
+    height: auto;
+}
