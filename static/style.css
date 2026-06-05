@@ -1,11 +1,29 @@
 .cutter-icon {
     max-width: 20vw;
-    position: absolute;
-    right: 40px;
     top: 40px;
 }
 
 .cutter-icon img{
     width: 100%;
     height: auto;
+}
+
+.cheese {
+    max-width: 20vw;
+    top:40px
+}
+
+.cheese img{
+    width: 100%;
+    height: auto;
+}
+
+
+.split {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 4vw; 
+    max-width: 70vw;
+    margin: 1vw auto;
+    margin-top: 5vw;
 }

@@ -5,22 +5,29 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>cheesecutter</h1>
 
-    <h2>Put a link, get an AI Summary!</h2>
-    <div class="cutter-icon">
-      <img src="https://github.com/katetriestocode/cheesecutter/blob/main/cuttericon.png?raw=true">
-    </div>
-    <div class="input">
-      <input type="text" id="link" placeholder="paste link here">
-      <button onclick="submit()">time go</button>
-    </div>
+    <div class="split">
+      <div class="cutter-icon">
+        <img src="https://github.com/katetriestocode/cheesecutter/blob/main/cuttericon.png?raw=true">
+      </div>
+      <div class="text-bit">
+        <h1>cheesecutter</h1>
+        <h2>Put a link, get an AI Summary!</h2>
+        <div class="input">
+          <input type="text" id="link" placeholder="paste link here">
+          <button onclick="submit()">time go</button>
+        </div>
 
-    <div id="result-container" style="margin-top: 20px;">
-        <h3>summary:</h3>
-        <p id="summarytext">beep boop...</p>
+        <div id="result-container" style="margin-top: 20px;">
+            <h3>summary:</h3>
+            <p id="summarytext">beep boop...</p>
+        </div>
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+        <script src="{{ url_for('static', filename='effect.js') }}"></script>
+      </div>
+      <div class="cheese">
+        <img src="https://github.com/katetriestocode/cheesecutter/blob/main/cheese.png?raw=true" alt="cheese">
+      </div>
     </div>
-  <script src="{{ url_for('static', filename='index.js') }}"></script>
-  <script src="{{ url_for('static', filename='effect.js') }}"></script>
 </body>
 </html>
